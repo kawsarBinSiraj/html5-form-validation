@@ -12,12 +12,11 @@
         <!-- Custom styles for this template -->
         <style type="text/css">
             body {
-                padding-top: 5rem;
+                padding-top: 2rem;
             }            
         </style>
     </head>
     <body>
-
 
 
        <div class="container"> 
@@ -26,25 +25,30 @@
                    <form>
                      <div class="form-group">
                         <label for="exampleInput1">Name</label>
-                        <input type="text" class="form-control" placeholder="Name" tabindex="1" autofocus="on" autocomplete="on" required pattern="[A-Za-z]{10}">
-                        <small id="emailHelp" class="form-text text-muted">User name should be A-Z or a-z &#38; 10 characters</small>
+                        <input type="text" class="form-control form-control-sm" placeholder="Name" tabindex="1" autofocus="on" autocomplete="on" required pattern="[A-Za-z]{10}" title="opps !">
+                        <small id="emailHelp" class="form-text text-muted">User name should be A-Z or a-z &#38; must be total 10 characters</small>
                       </div>
                       <div class="form-group">
                         <label for="exampleInput2">Email address</label>
-                        <input type="email" class="form-control" placeholder="Enter email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
-                        <small id="emailHelp" class="form-text text-muted">email no. should be characters@characters.com</small>
+                        <input type="email" class="form-control form-control-sm" placeholder="Enter email" required pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
+                        <small id="emailHelp" class="form-text text-muted">email no. should be like characters@characters.com</small>
                       </div>
                       <div class="form-group">
                         <label for="exampleInput3">Mobile No. (bd)</label>
-                        <input type="tel" class="form-control" placeholder="Mobile No." pattern="[0-9]{10}">
-                        <small id="emailHelp" class="form-text text-muted">Mobile No should be 0-9 &#38; 10 digit</small>
+                        <input type="tel" class="form-control form-control-sm" placeholder="Mobile No." required pattern="[\+88]+[\0-9]{13}">
+                        <small id="emailHelp" class="form-text text-muted">Mobile No should be +88 &#38; in 0-9(11 digit)</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInput3">Quantity</label>
+                        <input type="number" class="form-control form-control-sm" placeholder="Quantity" required min="1" max="10">
+                        <small id="emailHelp" class="form-text text-muted">Quantity should be between 1 to 10</small>
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword4">Password</label>
-                        <input type="password" class="form-control" placeholder="Password" pattern=".{6,}">
+                        <input type="password" class="form-control form-control-sm" placeholder="Password" required pattern="{6,}">
                         <small id="emailHelp" class="form-text text-muted">Password should be six or more characters</small>
                       </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                     </form>
                </div>
            </div>
